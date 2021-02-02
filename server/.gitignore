@@ -1,0 +1,18 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules
+
+# Optional npm cache directory
+.npm
+
+# WebStorm
+.idea
+# Config
+.env
+
+# Ignore Dist folder(it only needs for deploy)
+dist

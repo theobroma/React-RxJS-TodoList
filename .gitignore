@@ -1,0 +1,8 @@
+# Dependency directories
+node_modules/
+#Client build folder
+client/dist
+#Server build folder
+server/dist
+#vs code setting folder
+.vscode

@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "614e9633-3374-4ddc-a61f-a5b91033de0b",
+		"name": "TodoList",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Todos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"text\":\"awesome text\"\n  \n}"
+				},
+				"url": {
+					"raw": "http://localhost:3001/todos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"todos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get TodoByID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"text\":\"awesome text\"\n  \n}"
+				},
+				"url": {
+					"raw": "http://localhost:3001/todos/5b15c9d9a2358915d81bc4be",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"todos",
+						"5b15c9d9a2358915d81bc4be"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Todo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"text\":\"awesome todo text\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3001/todos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"todos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Todo",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"_id\":\"5b16dc22aeac033248515700\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3001/todos/5b170bd8df5971301090dbdc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"todos",
+						"5b170bd8df5971301090dbdc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Toggle Todo/Edit Todo",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"completed\":\"true\",\n\t\"text\": \"text from postman\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3001/todos/5b19897b55813b16b4c4407e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"todos",
+						"5b19897b55813b16b4c4407e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
